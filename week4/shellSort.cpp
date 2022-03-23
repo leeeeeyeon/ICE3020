@@ -135,6 +135,12 @@ void first() {
 	end = system_clock::now();
 	cout << "증가식1: h = 3*h+1 감소식: h = h/3 쉘 정렬 실행 시간(N=10,000,000): " << duration_cast<nanoseconds>(end - start).count() << " ns" << endl;
 	checkSort(arr5, n5);
+
+	delete arr1;
+	delete arr2;
+	delete arr3;
+	delete arr4;
+	delete arr5;
 }
 
 void second() {
@@ -153,32 +159,38 @@ void second() {
 	system_clock::time_point start = system_clock::now();
 	shellSort2(arr1, n1);
 	system_clock::time_point end = system_clock::now();
-	cout << "증가식1: h = 3*h 감소식: h = h/3 쉘 정렬 실행 시간(N=100,000): " << duration_cast<nanoseconds>(end - start).count() << " ns" << endl;
+	cout << "증가식2: h = 3*h 감소식: h = h/3 쉘 정렬 실행 시간(N=100,000): " << duration_cast<nanoseconds>(end - start).count() << " ns" << endl;
 	checkSort(arr1, n1);
 
 	start = system_clock::now();
 	shellSort2(arr2, n2);
 	end = system_clock::now();
-	cout << "증가식1: h = 3*h 감소식: h = h/3 쉘 정렬 실행 시간(N=500,000): " << duration_cast<nanoseconds>(end - start).count() << " ns" << endl;
+	cout << "증가식2: h = 3*h 감소식: h = h/3 쉘 정렬 실행 시간(N=500,000): " << duration_cast<nanoseconds>(end - start).count() << " ns" << endl;
 	checkSort(arr2, n2);
 
 	start = system_clock::now();
 	shellSort2(arr3, n3);
 	end = system_clock::now();
-	cout << "증가식1: h = 3*h 감소식: h = h/3 쉘 정렬 실행 시간(N=1,000,000): " << duration_cast<nanoseconds>(end - start).count() << " ns" << endl;
+	cout << "증가식2: h = 3*h 감소식: h = h/3 쉘 정렬 실행 시간(N=1,000,000): " << duration_cast<nanoseconds>(end - start).count() << " ns" << endl;
 	checkSort(arr3, n3);
 
 	start = system_clock::now();
 	shellSort2(arr4, n4);
 	end = system_clock::now();
-	cout << "증가식1: h = 3*h 감소식: h = h/3 쉘 정렬 실행 시간(N=5,000,000): " << duration_cast<nanoseconds>(end - start).count() << " ns" << endl;
+	cout << "증가식2: h = 3*h 감소식: h = h/3 쉘 정렬 실행 시간(N=5,000,000): " << duration_cast<nanoseconds>(end - start).count() << " ns" << endl;
 	checkSort(arr4, n4);
 
 	start = system_clock::now();
 	shellSort2(arr5, n5);
 	end = system_clock::now();
-	cout << "증가식1: h = 3*h 감소식: h = h/3 쉘 정렬 실행 시간(N=10,000,000): " << duration_cast<nanoseconds>(end - start).count() << " ns" << endl;
+	cout << "증가식2: h = 3*h 감소식: h = h/3 쉘 정렬 실행 시간(N=10,000,000): " << duration_cast<nanoseconds>(end - start).count() << " ns" << endl;
 	checkSort(arr5, n5);
+
+	delete arr1;
+	delete arr2;
+	delete arr3;
+	delete arr4;
+	delete arr5;
 }
 
 void third() {
@@ -197,32 +209,38 @@ void third() {
 	system_clock::time_point start = system_clock::now();
 	shellSort3(arr1, n1);
 	system_clock::time_point end = system_clock::now();
-	cout << "증가식1: h = 5*h+1 감소식: h = h/5 쉘 정렬 실행 시간(N=100,000): " << duration_cast<nanoseconds>(end - start).count() << " ns" << endl;
+	cout << "증가식3: h = 5*h+1 감소식: h = h/5 쉘 정렬 실행 시간(N=100,000): " << duration_cast<nanoseconds>(end - start).count() << " ns" << endl;
 	checkSort(arr1, n1);
 
 	start = system_clock::now();
 	shellSort3(arr2, n2);
 	end = system_clock::now();
-	cout << "증가식1: h = 5*h+1 감소식: h = h/5 쉘 정렬 실행 시간(N=500,000): " << duration_cast<nanoseconds>(end - start).count() << " ns" << endl;
+	cout << "증가식3: h = 5*h+1 감소식: h = h/5 쉘 정렬 실행 시간(N=500,000): " << duration_cast<nanoseconds>(end - start).count() << " ns" << endl;
 	checkSort(arr2, n2);
 
 	start = system_clock::now();
 	shellSort3(arr3, n3);
 	end = system_clock::now();
-	cout << "증가식1: h = 5*h+1 감소식: h = h/5 쉘 정렬 실행 시간(N=1,000,000): " << duration_cast<nanoseconds>(end - start).count() << " ns" << endl;
+	cout << "증가식3: h = 5*h+1 감소식: h = h/5 쉘 정렬 실행 시간(N=1,000,000): " << duration_cast<nanoseconds>(end - start).count() << " ns" << endl;
 	checkSort(arr3, n3);
 
 	start = system_clock::now();
 	shellSort3(arr4, n4);
 	end = system_clock::now();
-	cout << "증가식1: h = 5*h+1 감소식: h = h/5 쉘 정렬 실행 시간(N=5,000,000): " << duration_cast<nanoseconds>(end - start).count() << " ns" << endl;
+	cout << "증가식3: h = 5*h+1 감소식: h = h/5 쉘 정렬 실행 시간(N=5,000,000): " << duration_cast<nanoseconds>(end - start).count() << " ns" << endl;
 	checkSort(arr4, n4);
 
 	start = system_clock::now();
 	shellSort3(arr5, n5);
 	end = system_clock::now();
-	cout << "증가식1: h = 5*h+1 감소식: h = h/5 쉘 정렬 실행 시간(N=10,000,000): " << duration_cast<nanoseconds>(end - start).count() << " ns" << endl;
+	cout << "증가식3: h = 5*h+1 감소식: h = h/5 쉘 정렬 실행 시간(N=10,000,000): " << duration_cast<nanoseconds>(end - start).count() << " ns" << endl;
 	checkSort(arr5, n5);
+
+	delete arr1;
+	delete arr2;
+	delete arr3;
+	delete arr4;
+	delete arr5;
 }
 
 int main() {
