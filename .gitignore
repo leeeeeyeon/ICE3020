@@ -2,3 +2,4 @@
 *.zip
 *.xlsx
 *.jpg
+.DS_Store
